@@ -1,0 +1,932 @@
+*****************************************************************************
+*                                                                           *
+*                          SOFTWARE RELEASE GUIDE                           *
+*                                                                           *
+*                              COBOL85 V30L10                               *
+*                                                                           *
+*****************************************************************************
+
+This file (COBOL85.TXT) consists of the following sections.
+
+ 1.  Outline of Product
+ 2.  Product Composition
+ 3.  Product Documentation
+ 4.  Hardware Requirements
+ 5.  Software Requirements
+ 6.  Executing Sample Programs
+ 7.  Utilities and Tools
+ 8.  Using the ODBC Interface to Access Remote Databases
+ 9.  Restrictions
+10.  Notes
+
+In this software release guide, product names are abbreviated as follows:
+
+- Microsoft(R) Windows(R) Operating System Version 3.1
+   -> "Windows 3.1"
+- Microsoft(R) Windows(R) 95 Operating System
+   -> "Windows 95"
+- Microsoft(R) Windows NT(TM) Workstation Operating System Version 3.51
+   -> "Windows NT"
+- Microsoft(R) Windows NT(TM) Server Network Operating System Version 3.51
+   -> "Windows NT" 
+- Microsoft(R) Windows NT(TM) Workstation Operating System Version 4.0
+   -> "Windows NT"
+- Microsoft(R) Windows NT(TM) Server Network Operating System Version 4.0
+   -> "Windows NT" 
+- Microsoft(R) Visual C++(R)
+   -> "Visual C++"
+
+
+ 1.  Outline of Product
+
+COBOL85 V30L10 offers the following COBOL development system.
+
+        - COBOL development system which supports 32 bit mode of 
+          Windows 95 or Windows NT and 32 bit development environment.  
+        
+ 2.  Product Composition
+
+COBOL85 V30L10 is composed of product medium and associated manuals.
+
+        - COBOL Reference Manual
+        - COBOL V30 User's Guide
+        - COBOL Debugging Guide
+        - Getting Started Guide
+        - Micro Focus to Fujitsu COBOL Conversion Guide
+
+
+ 3.  Product Documentation
+
+Fujitsu provides common reference information for Windows 3.1, 
+Windows 95 and Windows NT.
+
+ [WIN] : Windows 95 COBOL85 V30L10
+         Windows NT COBOL85 V30L10
+
+
+ 4.  Hardware Requirements
+
+-----------------------------------------------------------------------------
+Category                        Requirement
+-----------------------------------------------------------------------------
+Machine and Memory              Machine on which Windows(R) 95 operates or 
+                                Windows NT operates
+
+Hard Disk Drive                 17.0 MB or more
+-----------------------------------------------------------------------------
+
+
+ 5.  Software Requirements
+
+-----------------------------------------------------------------------------
+Software             Requirement                Remarks
+-----------------------------------------------------------------------------
+OS                   Windows NT or
+                     Windows 95
+
+PowerBSORT           V1.0L30                    Used to sort and merge binary 
+                                                files or large quantities of  
+                                                data needed for high-speed 
+                                                business data processing.
+
+Windows(R) Sockets   V1.1                       Needed for simple inter-
+                                                application communication. 
+                                                It provides message processing 
+                                                between programs. Windows 95
+                                                and Windows NT provided this  
+                                                as a system function. TCP/IP 
+                                                protocol should be installed 
+                                                and defined in the system  
+                                                network configuration.
+-----------------------------------------------------------------------------
+
+
+
+
+ 6.  Executing Sample Programs
+
+Information regarding execution of sample programs can be obtained by 
+referring to the "COBOL85 V30 User's Guide" supplied with Fujitsu COBOL.
+     - Section 3.1, "Compiling Sample Programs"
+     - Section 4.1, "Linking Sample Programs"
+     - Section 5.1, "Executing Sample Programs"
+     
+Sample programs are provided in the COBOL Getting Started Guide.
+
+
+ 7.  Utilities and Tools
+
+COBOL85 provides the following utilities and tools in addition to the
+COBOL85 Runtime System and COBOL85 debugger:
+
+  -  PSTAFF.EXE         Development Support Utility
+  -  COBFUT32.EXE       COBOL85 File Utility
+  -  MFT085.EXE         MF COBOL Source Conversion Utility
+  -  MFTO85FC.EXE       MF COBOL File Conversion Utility
+  -  COBCISRV.EXE       Logical Destination Definition Server
+  -  COBCIU32.EXE       Logical Destination Definition File Creation Utility
+  -  COBPRTST.EXE       Presentation File Test Utility
+  -  SQLODBCS.EXE       ODBC information Set Utility
+
+  1)    The Development Support Utility (PSTAFF.EXE), PROGRAMMING-STAFF 
+	(abbreviated to P-STAFF), is a window in which the following 
+	operations can be performed: editing, compiling, linking, executing, 
+	debugging, and maintain COBOL85 programs.  (See the "Fujitsu	
+	COBOL85 V30 User's Guide" and online help additional information).
+	
+  2)    The COBOL85 File Utility (COBFUT32.EXE) selects usable files for
+	the COBOL85 file system. Files can easily be selected from a menu
+	without executing any COBOL applications.  (See the "Fujitsu	
+	COBOL85 V30 User's Guide" and online help additional information).
+
+  3)    The MF COBOL/2 Source Conversion Utility (MFT085.EXE) converts
+	COBOL source programs and libraries from COBOL/2 specifications
+	to COBOL85 specifications. Installation of the MF COBOL/2 Source
+	Conversion Utility can be selected when installing COBOL85 V30L10.
+        (Refer to the "Micro Focus to Fujitsu COBOL Conversion Guide" for 
+         more information on about this tool).
+
+  4)    The MF COBOL/2 File Conversion Utility (MFTO85FC.EXE) converts
+        from Micro Focus Files to FUJITSU COBOL85 Files. Installation of
+        the MF COBOL/2 File Conversion Utility can be selected when 
+        installing COBOL85 V30L10.  Refer to the "Micro Focus to Fujitsu 
+        COBOL Conversion Guide" for more information on using this tool.
+
+  5)    Logical Destination Definition Server (COBCISRV.EXE) is the
+	communication system that controls message receipt from clients.
+
+	Refer to the "COBOL85 V30 User's Guide" and online help for more
+	information on using this tool.
+
+  6)    The Logical Destination Definition File Creation Utility
+	(COBCIU32.EXE) creates the defined files required by the client for
+	simple interapplication communication.  (See the "Fujitsu	
+	COBOL85 V30 User's Guide" and online help additional information).
+
+  7)    Presentation File Test Utility (COBPRTST.EXE) is application by 
+	which an interactive processing by which the presentation file 
+	function is used is done is used is done to test the unit.
+
+	Refer to the "COBOL85 V30 User's Guide" and online help for more
+	information on using this tool.
+
+  8)    ODBC information Set Utility (SQLODBCS.EXE) is remotely of the 
+	data base function the data base access It is tool which makes 
+	and updates a necessary ODBC information file when (ODBC) is used.
+
+	Refer to the "COBOL85 V30 User's Guide" and online help for more
+	information on using this tool.
+
+
+ 8.  Using the ODBC Interface to Access Remote Databases
+
+The Open Database Connectivity Interface, proposed by Microsoft Corporation, 
+is an application program interface (API) for accessing databases.
+
+To use the ODBC environment to access databases from COBOL85, an ODBC driver 
+must be created. At the same time, the environment required by the ODBC 
+driver must be defined.
+
+For the ODBC driver, the SQL statement supported by the ODBC driver and API 
+are classified into the following levels:
+
+  -  SQL statement conformity levels: Core SQL syntax, minimum SQL syntax, 
+     extended SQL syntax.
+
+  -  API conformity levels: Core, level 1, level 2
+
+The ODBC driver is assumed to support the following function ranges for 
+COBOL85.
+
+  -  SQL statement conformity levels: Minimum SQL syntax
+  -  API conformity levels: Level 1
+
+Notes on remote databases (ODBC) are listed below:
+
+  1)    When using a host variable, use the host variable that corresponds 
+	with the data type specified by the ODBC driver.
+
+  2)    When using the SQL statement, check the SQL statement specified by 
+	the ODBC driver.
+
+  3)    The ODBC environment option value can be changed through
+        SQL statements and specifying the ODBC information file, or
+        specifying the data source (ODBC driver, DBMS and associated 
+        DB products). When this is done, the SQL statements are executed, 
+        the information is generated from ODBC drivers. When the WHENEVER 
+        statement is used, an error may occur in program execution.  If                 
+        you experience a program error, it may be necessary to modify your
+        program.
+
+  4)    When the dynamic SQL PREPARE, -EXECUTE, or EXECUTE IMMEDIATE 
+	statements are used, a WHENEVER clause NOT FOUND may be 
+	displayed; the following SQL statements are valid:
+
+	- SELECT (When PREPARE-EXECUTE statements)
+	- UPDATE (search)
+	- UPDATE (positioned)
+	- DELETE (search)
+	- DELETE (positioned)
+	- INSERT
+	- Dynamic UPDATE (search)
+	- Dynamic UPDATE (positioned)
+	- Dynamic DELETE (search)
+	- Dynamic DELETE (positioned)
+
+  5)    When SQL sentences other than data operation sentence (SELECT, 
+	UPDATE, DELETE, INSERT) are dynamically executed, the following 
+	indications may be generated by each ODBC driver.
+
+	Event: 
+	SQLSTATE:       02000
+	SQLCODE:        +100
+	SQLMSG:         No data
+
+  6)    If the character-string contains the value X'00', the results of 
+	storing the value and fetching the value from the database are 
+	not assured.
+
+  7)    Using the Oracle(R) Oracle7(TM) ODBC Driver; no position
+        DELETE and position UPDATE statements are allowed.
+
+  8)    Using the SQL Server ODBC Driver
+
+        a) Position DELETE and position UPDATE statements can be used  
+           on a specific condition where @SQL_CONCURRENCY is specified for
+           Server information in the ODBC information file following 
+           combinations:
+  
+       ---------------------------+-------------------------------------------
+       ODBC Driver                | Server
+       ---------------------------+-------------------------------------------
+       Microsoft(R)               | Windows NT(R) 3.51 &
+       SQL server(TM) ODBC driver | Microsoft(R) SQL Server(TM) Ver6.0
+       Ver2.5                     | or later version
+       or later version           | 
+       ---------------------------+-------------------------------------------
+
+           For information about the @SQL_CONCURRENCY, refer to the "COBOL85 
+           User's Guide for Windows" and data source manuals and the following. 
+           Information about specifying @SQL_CONCURRENCY for Server can be found
+           in the ODBC information file
+
+           a-1) When @SQL_CONCURRENCY is specified, position DELETE and
+                position UPDATE statements can be used. However, one or
+                more unique indexes exist for the associated table. A unique
+                index is created for each column.
+
+                The example of describing the unique index is as follows:
+
+                -  When the table is created, PRIMARY KEY constraint or
+                   UNIQUE constraint is defined for each column. 
+                   
+                - Create the unique index for any column of given table.
+                  (ex. CREATE UNIQUE INDEX......) 
+
+                [NOTICE]
+                When a unique index is created, the system checks for
+                duplicate index values (one in which no two rows are
+                permitted to have the same index value). If there are
+                duplicate key values, an error message is returned.
+                When position DELETE statement or position UPDATE
+                statement is executed, the following message is returned
+                and statement fails when the @SQL_CURRENCY is specified without
+                creating a unique index:
+
+        	Event:
+	        SQLSTATE:       S1009
+	        SQLCODE:        +00016929
+	        SQLMSG:         [Microsoft][ODBC SQL Server Driver][SQL Server]
+                               Cursor is read only.
+
+           a-2) When cursor is opened, an event occurs with the following 
+                symptoms (information output) and cursor is opened normally:
+
+        	Event:
+	        SQLSTATE:       01S02
+	        SQLCODE:        +00000000
+	        SQLMSG:         [Microsoft][ODBC SQL Server Driver]Cursor
+                               type changed.
+
+                When WHENEVER statement is used, the program is processed
+                so that an error may occur. Change the program as required.
+                
+
+           a-3) Following is an operational example using the combination of
+                Microsoft(R) SQL Server(TM) ODBC driver Ver2.5 and
+                Microsoft(R) SQL Server(TM) Ver6.0 when @SQL_CONCURRENCY
+                is specified (OS:Windows NT(R) 3.51).           
+               
+                <OPERATON EXAMPLE>
+                 Two clients, client A and client B in order,
+                 update the same data in the same column, same table and on
+                 same server using positioned UPDATE statement, the
+                 lock and unlock and state of each clients operates as
+                 follows:
+
+                  Notes:The figure in () means the execution order.
+                 +<client A>----------------------------------------------+
+                 |  (1) DECLAER cursor-name CURSOR FOR ...                |
+                 |  (3) OPEN cursor-name                                  |
+                 |  (5) FETCH cursor-name INTO ...                        |
+                 |  (7) UPDATE table-name .. WHERE CURRENT OF cursor-name |
+                 |  (9) CLOSE cursor-name                                 |
+                 | (11) COMMIT                                            |
+                 +--------------------------------------------------------+
+                 +<client B>----------------------------------------------+
+                 |  (2) DECLAER cursor-name CURSOR FOR ...                |
+                 |  (4) OPEN cursor-name                                  |
+                 |  (6) FETCH cursor-name INTO ...                        |
+                 |  (8) UPDATE table-name .. WHERE CURRENT OF cursor-name |
+                 | (10) CLOSE cursor-name                                 |
+                 | (12) COMMIT                                            |
+                 +--------------------------------------------------------+
+
+                 CASE1:@SQL_CONCURRENCY=LOCK is specified for client A and
+                       @SQL_CONCURRENCY=LOCK , ROWVER or VALUES is specified
+                       for client B
+                 RESULT:When (5)FETCH statement of client A is executed, the
+                        table specified for (2)DECLARE statement is locked
+                        until the transaction of client A proceeds to
+                        completion with (11) COMMIT statement. And (6)FETCH
+                        statement of client B waits for execution.  
+
+                 CASE2:@SQL_CONCURRENCY=ROWVER or VALUES is specified for
+                       client A and @SQL_CONCURRENCY=LOCK is specified for
+                       client B
+                 RESULT:When (6)FETCH statement of client B is executed, the
+                        table specified for (2)DECLARE statement is locked
+                        until the transaction of client B proceeds to
+                        completion with (12) COMMIT statement. And (7)UPDATE
+                        statement of client A is waits for execution.  
+
+                 CASE3:@SQL_CONCURRENCY=ROWVER or VALUES is specified for
+                       client A and @SQL_CONCURRENCY=ROWVER or VALUES is
+                       specified for client B
+                 RESULT:When (7)UPDATE statement of client A is executed,
+                        the table specified for (1)DECLARE statement is
+                        locked until the transaction of client A proceeds to
+                        completion with (11) COMMIT statement. And (8)UPDATE
+                        statement of client B error occurs. If the order of
+                        (6)FETCH statement and (7)UPDATE statement is
+                        reverse, (6)FETCH statement is waits for execution.
+
+	b) When the CONNECT statement is executed, the following event 
+	   occurs with the following symptoms (information output) and 
+	   connection ends normally:
+
+	   Event:
+	   SQLSTATE:       01000
+	   SQLCODE:        +5701
+	   SQLMSG:         (SQL server) The database context is changed to 
+			   a "database name"
+
+	   Specifying the WHENEVER statement before the CONNECT statement 
+	   causes an error. Therefore, specify the WHENEVER statement after 
+	   the CONNECT statement.
+
+	c) When another cursor is opened and SQL statements having no
+           relation with the open cursor are executed and do not close the
+           cursor. The following event occurs with the following symptoms:
+
+	   Event:
+	   SQLSTATE:       S1000
+	   SQLCODE:        0
+	   SQLMSG:         (SQL server) The result of another statement 
+			   disables connection.
+
+	   Close the open cursor, then execute the SQL statements.
+           Executing these SQL statements, the data source environment
+           and COBOL85 conditions should match.
+
+           Refer to the "8) Notes on Using the SQL Server ODBC Driver - a)".
+
+	d) When the COMMIT WORK sentence or ROLLBACK WORK sentence or 
+	   DISCONNECT sentence is issued when the COMMIT mode is MANUAL, 
+	   the following will occur:
+
+	   Event:
+	   SQLSTATE:       01000
+	   SQLCODE:        0 
+	   SQLMSG:         [Microsoft][ODBC SQL Server Driver][DBMSSOCN]
+                           ConnectionRead (recv()).
+
+	   Only when the COMMIT mode is MANUAL will this occur. Additionally,
+	   this situation is not generated when Microsoft(R) SQL Server(TM) 
+           ODBC driver Version 2.5 are used.
+
+	e) Even if the ACCESS mode is READ ONLY, the result of the SQL 
+	   operation might be reflected in the data base.
+
+	f) When you pass the data through a SQL sentence (example the INSERT 
+	   sentence etc.), please use caution in specifying the row defined 
+           as a numeric type.
+
+	g) Open fails and will generate the following phenomena when 
+	   the cursor is defined and opened by the shown cursor declaration 
+           sentence. 
+          
+	   Cursor defined:
+	     DECLARE [cursor name] CURSOR FOR SELECT ... FOR UPDATE
+
+	   Event:
+	   SQLSTATE:       37000
+	   SQLCODE:        +00001003
+	   SQLMSG:         (SQL Server) The FOR UPDATE phrase is permitted only 
+                           with DECLARE CURSOR.
+
+	   The cursor operation cannot be executed under this condition.
+           To execute the OPEN statement, the data source environment and 
+           COBOL85 should have matching conditions.
+
+           Refer to the "8) Notes on Using the SQL Server ODBC Driver - a)".
+
+  9)    The sentence identifier  and the name used by the dynamic cursor 
+        declaration cannot be specified using the EXECUTE sentence. 
+        Additionally, the sentence identifier and the name specified for 
+        the EXECUTE sentence cannot be used by the dynamic cursor declaration.
+
+ 10)    When floating decimal data is used.
+	The result might not be obtained and may generate a conversion 
+	when a data operation using a floating decimal data type is used
+        A problem occurs because the method of expressing data is 
+	different on the server and the client side.
+
+ 11)    Database Access Environment 
+        The combinations listed in the table below are checked.
+
+       ---------------------------+-------------------------------------------
+       ODBC Driver                | Server
+       ---------------------------+-------------------------------------------
+       Microsoft(R)               | Windows NT(R) 3.51 &
+       SQL Server(TM) ODBC driver | Microsoft(R) SQL Server(TM) Ver6.0, Ver6.5
+       Ver2.5, Ver2.65            | 
+       ---------------------------+-------------------------------------------
+       Oracle(R)                  | Windows NT(R) 3.51 &
+       Oracle7(TM) ODBC driver    | Oracle7 Server for Windows NT Release7.2
+       Ver1.13                    | 
+       ---------------------------+-------------------------------------------
+
+ 
+9.  Restrictions
+
+  1) A floating point cannot be specified in arguments of the built-in
+     functions INTEGER, INTEGER-PART, and REM.
+
+  2) The following file names cannot be specified.
+
+     - File names of 232 bytes or more (including drive and folder name
+       lengths).
+     - File name by which length by which file name does not include drive 
+       and folder name will exceed 15 bytes in case of file definition file 
+       name.
+     - File names containing spaces.
+     - In the same process, file name will treat as the same file when the 
+       file name up to 8 head characters of the long file name and 3 head 
+       characters of extension is the same.
+
+  3) Restrictions on P-STAFF
+
+     - The file names that were registered with the project function are
+       displayed only with uppercase letters. Therefore, the file names
+       are not case sensitive.
+     - Accessing the folder that contains a source file or project
+       file must be permitted.
+     - Screen redisplay does not occur during making with the project
+       function.
+     - Simultaneous compilation using two or more processes must not be
+       executed by P-STAFF or WINCOB. During compilation using P-STAFF
+       or WINCOB, compilation using another P-STAFF or WINCOB must not
+       be executed.
+     - Files to be linked using P-STAFF or WINLINK cannot have file names
+       of more than 130 bytes.
+     - A module definition file need not be specified to create an
+       executable file, the project function executes no operation.
+     - A under score cannot be used as a registration collection name.
+     - A blank cannot be used for the folder name and the file name.
+     - Re-drawing of the WINLINK screen will not be done during linking 
+       links with WINLINK on Windows(R) 95.
+     - When the window where the message from linker is displayed is shut 
+       with WINLINK, focus is not suitable for the WINLINK screen.
+     - It might be displayed as On Windows(R) 95, the DOS prompt screen 
+       started by WINLINK and the project "The value of the parameter 
+       exceeds the range of the allowance".
+       This is the one displayed because one of the initialization values of 
+       the DOS prompt screen which the system sets exceeds the range of the 
+       allowance.
+       There is no problem in the movement of the application even if this 
+       message is displayed. Moreover, there is no effect in the  made 
+       executable file, the dynamic link library, etc.
+     - A link option necessary for debugging the [link option] dialog is 
+       when automatically displayed, In the project function, the 
+       translation option "TEST" is specified.
+       When you delete However, the translation option "TEST", please 
+       delete this link option.
+
+  4) Restrictions on the screen handling function
+
+     - The SIZE clause cannot be specified for a numeric or numeric edited
+       item.
+     - The JUSTIFIED and SIZE clauses cannot be specified at the same time.
+     - If the JUSTIFIED and PROMPT clauses are specified at the same time,
+       the PROMPT clause is not used.
+     - A screen item may be specified in the ACCEPT statement in which the
+       PROMPT clause is specified or PROMPT may be specified with the WITH
+       clause. In either case, the characters specified in the PROMPT
+       clause are not recognized as input data, but are replaced with blanks.
+
+  5) File Utility
+
+     - If the file name has 8 header characters and the first 3 header 
+       characters are the same for a long file names, the 
+       input/output/update file for file utility, and will cause
+       an error used repetitively.
+
+  6) The following environmental variables should be English capital letters.
+
+     - TEMP
+     - BSORT_TMPDIR
+
+  7) The following limitations will exist when burial SQL sentence of the 
+     remote database access function which COBOL85 offers is debugged by 
+     using an interactive debugger.
+
+     - Setting a breakpoint and changing execution beginning point 
+       cannot be done for a SQL sentence.  After releasing the breakpoint 
+       in a SQL sentence you should re-execute the program.
+
+  8) Btrieve file.
+
+     - If the DELETE or WRITE sentence of the REWRITE sentence of the war 
+       system, or war system is executed for an index Btrieve file after
+       the order access READ sentence with an alternate-key in DYNAMIC
+       mode the location of the record will be irregular.   This is 
+       particularly the case when second record of alternate-key overlaps 
+       alternate-key and the overlap is read.
+
+ 9) The presentation file function is not supported in the English version of
+    this product.
+
+10. Notes
+
+  1) The following notes apply to using applications development under
+     Windows 3.1 and run in Windows NT. The following source 
+     program conditions should be meet so that compatibility of the
+     application and project file are satisfied:
+
+       a) Source Program Compatibility
+
+	  Calling a C-language program from a COBOL program or calling 
+	  a COBOL program from a C-language program, requires modification 
+	  of the source program. That is, the underscore must be deleted 
+	  from the program name paragraph of the C-language program to be 
+	  called by the COBOL program. Similarly, the underscore must be 
+	  deleted from the program name paragraph of the COBOL program to 
+	  be called by the C-language program.
+
+	  - Calling a C-language program from a COBOL program
+
+	    Windows 3.1
+
+	+-COBOL program------------+  +--->  +-C-language program----+
+	| IDENTIFICATION DIVISION. |  |      | sub()                 |
+	| PROGRAM-ID. MAIN.        |  |      |  {                    |
+	|                          |  |      |                       |
+	|     CALL "_sub" ---------+--+      |    return(0);         |
+	|                          |         |  }                    |
+	+--------------------------+         +-----------------------+
+
+	    Windows NT
+
+	+-COBOL program------------+  +--->  +-C-language program----+
+	| IDENTIFICATION DIVISION. |  |      | sub()                 |
+	| PROGRAM-ID. MAIN.        |  |      |  {                    |
+	|                          |  |      |                       |
+	|     CALL "sub" ----------+--+      |    return(0);         |
+	|                          |         |  }                    |
+	+--------------------------+         +-----------------------+
+
+	  - Calling a COBOL program from a C-language program
+
+	    Windows 3.1
+
+	+-C-language program----+  +--->  +-COBOL program------------+
+	| CPRG()                |  |      | IDENTIFICATION DIVISION. |
+	|  {                    |  |      | PROGRAM-ID. "_SUB"       |
+	|    JMPCINT2();        |  |      |                          |
+	|    SUB();       ------+--+      |                          |
+	|    JMPCINT3();        |         |                          |
+	|  }                    |         |                          |
+	+-----------------------+         +--------------------------+
+
+	    Windows NT
+
+	+-C-language program----+  +--->  +-COBOL program------------+
+	| CPRG()                |  |      | IDENTIFICATION DIVISION. |
+	|  {                    |  |      | PROGRAM-ID. "SUB"        |
+	|    JMPCINT2();        |  |      |                          |
+	|    SUB();       ------+--+      |                          |
+	|    JMPCINT3();        |         |                          |
+	|  }                    |         |                          |
+	+-----------------------+         +--------------------------+
+
+	  Resources can also be shared by COBOL85 of Windows(R) 3.1 V20L10 or 
+	  later by specifying a call method in a CALL statement, ENTRY 
+	  statement or the PROCEDURE DIVISION. For an explanation of the call 
+	  method supported by COBOL85 refer to Section 10.3, "Linking with 
+	  C-Language Programs" in the "COBOL V30 User's Guide".
+	
+          The following figure is an example of specifying a C-language call:
+
+	  Common to Windows 3.1 and Windows NT
+
+	+-COBOL program------------+  +--->  +-C-language program----+
+	| IDENTIFICATION DIVISION. |  |      | sub()                 |
+	| PROGRAM-ID. MAIN.        |  |      |  {                    |
+	|                          |  |      |                       |
+	|     CALL "sub" ----------+--+      |    return(0);         |
+	|           WITH C LINKAGE |         |  }                    |
+	|                          |         |                       |
+	+--------------------------+         +-----------------------+
+	
+	+-C-language program----+  +--->  +-COBOL program------------+
+	| CPRG()                |  |      | IDENTIFICATION DIVISION. |
+	|  {                    |  |      | PROGRAM-ID. SUB          |
+	|    JMPCINT2();        |  |      |                          |
+	|    SUB();       ------+--+      | PROCEDURE DIVISION       |
+	|    JMPCINT3();        |         |   USING WITH C LINKAGE.  |
+	|  }                    |         |                          |
+	+-----------------------+         +--------------------------+
+
+
+       b) Project File Compatibility
+
+	  A Windows NT application can be created using Windows NT 
+	  COBOL85 by using the project file created using the Windows 3.1 
+	  COBOL85; this can be done by doing the following:
+	  
+	  - Changing the Linker Option
+
+	    The Windows 3.1 linker and the Windows NT linker have 
+	    different linker options. Therefore, the linker options must be 
+	    changed using the P-STAFF of the Windows NT COBOL85.
+
+	    The linker options that were changed for Windows NT are stored 
+	    in the linker option information file (.LNI), which can also 
+	    be used by Windows 3.1. (This new linker option is stored as a 
+	    new section of Windows NT.) After this change, the linker 
+	    option information can be shared by Windows 3.1 and 
+	    Windows NT.
+
+	  - Changing the Contents of the Module Definition File
+
+	    The contents of the Windows 3.1 module definition file are 
+	    different from those of the Windows NT module definition file.
+
+	    -- Creation of the Windows NT module definition file must be 
+	       based on the Windows 3.1 module definition file. Any module 
+	       definition statements that are invalid as Windows NT module 
+	       definition statements must be changed into comments.
+	       (Comments are created by placing a semicolon in column 1 of 
+	       the statement.) If the invalid statements are not converted 
+	       to comments, they must be deleted. For explanations of 
+	       Windows NT module definition statements, refer to Section 
+	       4.2.5.2, "Contents of the Module Definition File" in the 
+	       "COBOL85 V30 User's Guide".
+	    -- Windows NT does not require a module definition file for the 
+	       creation of executable files. In project creation, the module 
+	       definition file specification for an executable file is 
+	       ignored. Therefore, the module definition file specification 
+	       need not be modified.
+
+	  - The names of drives that have development resources registered
+	    in a project file can be referenced. If this referencing in
+	    Windows 3.1 is different from that in Windows NT, the resource
+	    information that was registered in the project file must be
+	    corrected.
+
+	    The resource information must be corrected so that the same 
+	    resource-containing drive name and folder name can be accessed 
+	    from both Windows 3.1 and Windows NT.
+
+	    Example: Source programs and other resources that can be shared 
+		     between systems. System-specific resources such as 
+		     objects are managed in their respective systems,
+		     however, and are not shared.
+
+	    - When entities are common to systems: The network must be 
+	      connected so that system-common resources can be referenced 
+	      with the same folder name on the X-drive from Windows NT 
+	      and Windows 3.1.
+	
+	    - When entities are not common but are system specific: The 
+	      network must be connected so that the system specific resources 
+	      can be referenced with the same folder name on the Y-drive 
+	      from Windows NT and Windows 3.1.
+
+					      +-----Resources----+
+					      |    +-32 bit-+    |
+		+-----------------+           |    |  \OBJ  |    |
+		+  Windows NT     |           |    |  \EXE  |    |
+		|                 |           |    |  \DEF  |    |
+		|       X:\  -----+-----------+--> +--------+    |
+		|                 |           |                  |
+		|       Y:\  -----+-----------+--> +-Common-+    |
+		|                 |           |    |        |    |
+		|                 |           |    |  \COB  |    |
+		+--------+--------+           |    |  \CBL  |    |
+			 |                    |    |  \PRJ  |    |
+       ------------------+------------------- |    |  \LNI  |    |
+	+-------+-------+ +-------+-------+   |    |        |    |
+	|Windows 3.1    | |Windows 3.1    |   |    |        |    |
+	|      X:\      | |      X:\  ----+---+--> +--------+    |
+	|               | |               |   |                  |
+	|      Y:\      | |      Y:\  ----+---+--> +-16 bit-+    |
+	+---------------+ +---------------+   +    |  \OBJ  |    |
+					      |    |  \EXE  |    |
+					      |    |  \DEF  |    |
+					      |    +--------+    |
+					      +------------------+
+
+  2) File names and folder names must satisfy the Windows 3.1 restrictions.
+     (That is, each file name must consist of up to 8 characters, and the 
+     extension must consist of up to 3 characters.)
+
+  3) When a DLL is linked with the LIBC.LIB library supported by COBOL85, the 
+     executable file that calls DLLs must also be linked with the LIBC.LIB 
+     library. (In the COBOL85 environment, just as executable file and DLLs 
+     are usually created.)
+
+     Creation of multi-thread applications using a C-language program as a
+     main program requires use of a multi-thread library supported by Visual
+     C++. The DLL of the COBOL program must also be linked with the
+     multi-thread library. For an explanation of the multi-thread library,
+     refer to the online help information on Visual C++.
+
+  4) Notes on using Fujitsu COBOL85 with Oracle Pro*COBOL
+
+   a) OPTIMIZE option must not be specified for COBOL85 compiler.
+      Your application will not work correctly if the OPTIMIZE option is 
+      specified and the source program uses VARCHAR for host variables.
+
+   b) MAXLITERAL must be specified as 160 in the PRO*COBOL pre-compiler 
+      or specify Max Literal Length field in the GUI Options Dialog.
+      A compile error may occur if the MAXLITERAL default value of 1024 
+      is used. The valid value for this option when using COBOL85 is 160.
+
+   c) A COBOL non-numeric literal must be written between 12th and 72nd 
+      line character positions, even when variable length format source 
+      program.
+      Pro*COBOL pre-compilation error may occur if a COBOL non-numeric 
+      literal is written which exceeds 72nd line character positions.
+
+    Note a) detail description:
+
+     Fujitsu COBOL85 OPTIMIZE option has the following problem when using 
+     statements generated by Pro*COBOL:
+
+      Pro*COBOL generates COBOL language code sequences that replace the 
+      VARCHAR declaration and the CONNECT statement as follows:
+
+               :                                      
+       * VCHAR declaration                            
+       *01  PASSWD PIC X(8) VARYING.                  
+        01  PASSWD.                                   
+          02  PASSWD-LEN PIC S9(4) COMP-5.            
+          02  PASSWD-ARR PIC X(8).                    
+                :                                     
+            MOVE 5 TO PASSWD-LEN                      
+            MOVE "TIGER" TO PASSWD-ARR                
+       *    EXEC SQL                                  
+       *      CONNECT :USERID IDENTIFIED BY :PASSWD   
+       *    END-EXEC.                                 
+                :                                     
+            CALL "SQLADR" USING                       
+                PASSWD-LEN IN                         
+                PASSWD                                
+                SQL-SQHSTV(2)                         
+                :                                     
+
+      The SQLADR library routine stores the address of the VARCHAR host 
+      variable, PASSWD, into the SQL-SQHSTV(2). So, the correct first 
+      parameter for SQLADR should not be PASSWD-LEN IN PASSWD but PASSWD.
+      Pro*COBOL uses PASSWD-LEN IN PASSWD because it has same address as 
+      PASSWD.
+
+      When COBOL the OPTIMIZE is specified, the substitution is eliminated 
+      because PASSWD-ARR is not either implicitly or explicitly referenced:
+
+              MOVE "TIGER" TO PASSWD-ARR
+
+      The result is that the application will terminate abnormally because 
+      an incorrect parameter is set for CONNECT statement.
+
+  5) Notes concerning execution environment of COBOL application.
+
+     - The sum total of the argument character string length which can 
+       be passed to the COBOL application includes the delimitation 
+       character between the arguments and is 255 characters or less.
+
+     - The length of a full path for a COBOL application cannot be 
+       started from a directory definition which exceeds 127 characters. That
+       is to say that the maximum path length which can be specified in order
+       to start a COBOL application is 127 character of the initialization 
+       file length.
+
+  
+  6) COBOL85 standard editor 
+
+     The PowerGEM Plus editor comes the standard editor for COBOL85 users.
+     The editor can be changed by using the following procedures:
+     
+      a) Select "Customize editor" from the "File" menu.
+      b) Select "Set".
+      c) Specify "PowerGEM Plus folder\F3BXE000.EXE /pstaff" on the command 
+         line. This program resides in the PowerGEM Plus folder.  
+         The default editor is the P-STAFF editor which is normally shipped 
+         with COBOL85.
+      d) Execute SETENV32.EXE in the PowerGEM Plus folder.
+
+  7) General notes:
+       - The translation unit cannot be ended in the COPY sentence.
+         When the END PROGRAM sentence at the end of the 
+         translation unit exists, debugging a translation error or 
+ 	 using the interactive debugger cannot be done correctly.
+       
+       - When in positive penmanship or free form is used, do not
+         use the abolition element.
+         
+       - Using floating point functions
+         The microprocessor must support floating-point operations. If floating-
+         point operations are not supported by the microprocessor, an optional
+         numeric data processor (coprocessor) or overdrive card must be used.
+
+       - Specification locations of built-in functions
+         Some built-in functions (numeric and integer functions) can only be
+         specified in arithmetic expressions.
+
+       - Overflow in floating-point items
+         If the value of a single or double precision floating-point item
+         overflows, normal program operation is not assured.
+
+       - To Suppress the startup screen displayed at P-STAFF activation:
+         1) Select the P-STAFF icon.
+         2) Select the Program Manager icon menu 
+         3) Select the registration contents change function
+         4) Specify the startup screen suppression option (/ST) on the 
+	    command line.
+
+       - Sort-merge processing
+         The COBOL85 Runtime System is usually used for sort-merge. When
+         related PowerBSORT product is installed, PowerBSORT will be used
+         for sort-merge processing.
+
+       - Using NetWare server
+         When you use NetWare server storage library, you may fail in accessing 
+         to the library. If you should experience this, forward the library to 
+         client.
+
+       - Relation between Translation option "SRF" and Translation option 
+        "NUMBER".
+         When the translation option FREE is specified "SRF" "NUMBER" cannot 
+	 be specified. If this is specified, movement cannot be assured.
+
+       - Btrieve file
+
+         a) The Btrieve file record lock is not effective within the same 
+            process.
+         b) Start W32MKDE.EXE prior to using the Btrieve file.
+
+       - Debugger Processing 
+
+          a) A decimal point will be displayed regardless whether the 
+	     DECIMAL-POINT IS COMMA phrase at period(.) is specified.
+          b) The decimal point should be specified as a period (.) when you change 
+             the data content.
+          c) The application stored on a NetWare server cannot be debugged.
+          d) The following operations should not be done when the debugger ends,
+	     because the system will not recognize the following operations:
+             -- Resetting the screen changed by [property of the screen].
+
+          e) Do not push the Windows NT Application Window F12 key when executing 
+             an application. The application will end execution when an interrupt
+             signal is generated by this operation, and will need to be restarted. 
+             
+_____________________________________________________________________________
+
+Microsoft, Windows, and Visual C++ are registered trademarks of Microsoft 
+Corporation in the USA and other countries.
+
+Windows NT is a trademarks of Microsoft Corporation in the USA.
+
+Micro Focus COBOL/2 is a registered trademark of Micro Focus Ltd. in the 
+England.
+
+Btrieve is a trademarks of Btrieve Technologies,Inc. in the USA.
+
+Other product names are trademarks or registered trademarks of their
+respective companies.
+
+All rights reserved. Copyright (C) Fujitsu Limited 1992 to 1997
+
+_____________________________________________________________________________

@@ -1,0 +1,35 @@
+**-------------------------------------------------------------------**
+**  Option file (sample)                                             **
+**-------------------------------------------------------------------**
+* Specify the folder name that contains the library for source file
+COPYIN=C:\CONV\COPY\
+* Specify the folder name that contains the library for destination file
+COPYOUT=C:\CONV\COPY\
+* Specify the folder name for the destination file
+SRCOUT=C:\CONV\
+* Specify the folder name for the message file
+MESSAGE=C:\CONV\MSG\
+* Specify the folder name for the work file
+WORK=C:\CONV\
+*
+**-------------------------------------------------------------------**
+**  When a level 78 item is specified in a library,specify the first **
+**  character of the file name.                                      **
+**  If this character is omitted, 'S' is assumed.                    **
+**-------------------------------------------------------------------**
+COPY-REPLACE-CHAR=S
+*
+**-------------------------------------------------------------------**
+**  When the following item is compared,specify the character-string **
+**  of the data name.                                                **
+**   - Binary item           : Comparison of alphanumeric data item  **
+**   - Internal decimal item : Comparison of alphanumeric data item  **
+**   - Binary item           : Comparison of nonnumeric literal      **
+**   - Internal decimal item : Comparison of nonnumeric literal      **
+**  This utility generates the data name that a serial number        **
+**  'nnnn'(nnnn: 0001Å`9999) was added to the end of specified       **
+**  character-string.                                                **
+**  If this character is omitted, 'GEN--DATA--' is assumed.          **
+**-------------------------------------------------------------------**
+GENERATE-DATA-NAME='TEMP-DATA-'
+*

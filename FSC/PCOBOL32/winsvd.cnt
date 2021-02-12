@@ -1,0 +1,304 @@
+:Title COBOL85 debugger
+:Index COBOL85 debugger=winsvd.hlp
+:Link winsvd.hlp
+1 Limitations=IDH_NOTE
+1 How to use debugger
+2 Activating the debugger=IDH_DEBUGGER_ACTIVE
+2 Quitting the debugger=IDH_DEBUGGER_QUIT
+2 Basic operations of debugger
+3 Copying a character string=IDH_TEXT_COPY
+3 Retrieving a character string=IDH_TEXT_SEARCH
+3 Positioning the cursor at a specified line=IDH_SPECIFIED_LINE
+3 Sounding=IDH_SOUND
+3 Displaying a source file=IDH_SOURCE_FILE_OPEN
+3 Displaying a copy library file=IDH_INCLUDE_FILE_OPEN
+3 Displaying a subschema descriptor file=IDH_SUBSCHEMA_OPEN
+3 Displaying a screen and form descriptor=IDH_SMD_FILE_OPEN
+3 Displaying a file descriptor=IDH_FFD_FILE_OPEN
+3 Displays a program list=IDH_PROGRAM_LIST_OPEN
+3 Debugging using line commands=IDH_COMMAND_WINDOW_OPEN
+3 Changing the display format
+4 Changing the font=IDH_FONT
+4 Changing the colors=IDH_COLOR
+4 Specifying the toolbar display=IDH_TOOL_BAR_DISPLAY
+4 Changing the toolbar position=IDH_TOOL_BAR_PLACE
+4 Specifying the status bar display=IDH_STATUS_BAR_DISPLAY
+4 Activating another window or icon=IDH_WINDOW_FOCUS_CHANGE
+4 Rearranging the windows or icons=IDH_WINDOW_ICON_ARRANGE
+4 Displaying two parts of the same program simultaneously=IDH_DIVIDED_SOURCE_DISPLAY
+4 Changing the data display format=IDH_CHANGE_DATA_FMT
+2 Debugging operation
+3 Starting debugging=IDH_DEBUGGING_START
+3 Quitting debugging=IDH_DEBUGGING_QUIT
+3 Executing a program unconditionally=IDH_EXECUTION_CONTINUE
+3 Setting a breakpoint=IDH_BREAKPOINT_SET
+3 Canceling a breakpoint=IDH_BREAKPOINT_DELETE
+3 Forcing Program Execution to Break=IDH_FORCIBLY_BREAKING
+3 Tracing the processing flow during program execution=IDH_TRACE_EXECUTING_PATH
+3 Referencing and changing data values=IDH_DATA_VALUE
+3 Skipping the unnecessary processing=IDH_SKIP_SOME_STEPS
+3 Stopping the program execution at data value changing=IDH_BREAK_BY_MONITOR
+3 Stopping the program execution at specific value setting=IDH_BREAK_BY_DATACHK
+3 Determining Where Execution Breaks=IDH_PLACE_BREAKING
+3 Viewing the calling path=IDH_CALLING_PATH_CHECK
+3 Checking the statement exection count=IDH_EXECUTE_COUNTER
+3 Referencing the status of the currently used debug function=IDH_DEBUGGER_STATUS
+3 Tracing the past execution path=IDH_TRACE_EXECUTED_PATH
+3 Automating Debugging=IDH_AUTO_DEBUGGING
+3 Restarting a program=IDH_REDEBUGGING
+3 Allocating a Data Area in the Linkage Section=IDH_LINKAGE_AREA_GET
+3 Viewing and Modifying the Debug Environment=IDH_ENVIRONMENT
+3 Saving the debugging operation results into file=IDH_MAKE_LOG
+3 Referencing a program list=IDH_PROGRAM_LIST_REFER
+3 Executing a program up to a target position
+4 Executing only one statement=IDH_ONE_STEP
+4 Executing up to cursor position=IDH_RUNTO_CURSOR_POSITION
+4 Executing up to the next program=IDH_RUNTO_NEXT_PROGRAM
+4 Executing by specifying specific execution conditions=IDH_RUNTO_CONDITION
+1 Reference
+2 Screen configuration
+3 Main window=IDH_MAINFRAME
+3 [Source File] window=IDH_SOURCETYPE
+3 [Watch Data] window=IDH_MONITORTYPE
+3 [Line Command] window=IDH_CMDPRMTYPE
+3 [Program List] window=IDH_PROGRAMLIST
+3 Status bar=IDH_STATUS_BAR
+3 Menus
+4 [File] menu
+5 [Start Debugging]=IDH_FILE_OPEN
+5 [Recent Debugging]=IDH_DEBUG_OPEN
+5 [Exit]=IDH_APP_EXIT
+4 [Edit] menu
+5 [Copy]=IDH_EDIT_COPY
+4 [View] menu
+5 [Font]=IDH_SET_FONT
+5 [Color]=IDH_SET_COLOR
+5 [Automatic Format]=IDH_FORMAT_AUTO
+5 [Hexadecimal Format]=IDH_FORMAT_HEX
+5 [Toolbar]=IDH_VIEW_TOOLBAR
+5 [Status bar]=IDH_VIEW_STATUS_BAR
+4 [Search] menu
+5 [Find]=IDH_EDIT_FIND
+5 [Find Previous]=IDH_FIND_PREV
+5 [Find Next]=IDH_FIND_NEXT
+5 [Jump]=IDH_JUMP
+4 [Continue] menu
+5 [Re-debug]=IDH_RERUN
+5 [Go]=IDH_CONTINUE
+5 [Animate]=IDH_ANIMATE
+5 [Break]=IDH_ATTENTION
+5 [Change Start Point to Cursor]=IDH_SKIP
+5 [Run to Cursor]=IDH_RUNTO_CURSOR
+5 [Step Into]=IDH_RUNTO_GLOBAL
+5 [Step Over]=IDH_RUNTO_LOCAL
+5 [Run to Next Program]=IDH_RUNTO_NEXTPROGRAM
+5 [Specific Execution]=IDH_RUNTO
+5 [Specific Execution Condition]=IDH_RUNTO_CASE
+4 [Debug] menu
+5 [Where]=IDH_WHERE
+5 [Call Stack]=IDH_CALLS
+5 [Breakpoint]=IDH_BREAK
+5 [Passage Count]=IDH_COUNT
+5 [Update Passage Count Display]=IDH_COUNTUPDATE
+5 [Data]=IDH_LIST
+5 [Data Name List]=IDH_DATANAMELIST
+5 [Watch Data]=IDH_DTRACE
+5 [Linkage]=IDH_LINKAGE
+5 [Watch Conditional Expression]=IDH_DATACHK
+5 [Trace]=IDH_FTRACE_TOGGLE
+5 [Backward Trace]-[Previous Statement]=IDH_TRACE_PREV
+5 [Backward Trace]-[Next Statement]=IDH_TRACE_NEXT
+5 [Backward Trace]-[Previous Procedure]=IDH_SECTION_TRACE_PREV
+5 [Backward Trace]-[Next Procedure]=IDH_SECTION_TRACE_NEXT
+4 [Option] menu
+5 [Environments]=IDH_ENVIRON
+5 [Automatic Debugging]=IDH_AUTORUN
+5 [Output Log]=IDH_PUT_LOG
+4 [Window] menu
+5 [Cascade]=IDH_WINDOW_CASCADE
+5 [Tile Horizontally]=IDH_WINDOW_TILE_HORZ
+5 [Tile Vertically]=IDH_WINDOW_TILE_VERT
+5 [Arrange Icons]=IDH_WINDOW_ARRANGE
+5 [Close All]=IDH_WINDOW_CLOSE
+5 [Program List]=IDH_PROGRAM_LIST
+5 [Line Command]=IDH_COMMAND
+5 [Window names]=IDH_WINDOW_LIST_WINDOW
+4 [Help] menu
+5 [Help Topics]=IDH_HELP_INDEX
+5 [About]=IDH_APP_ABOUT
+3 Toolbar
+4 [Start Debugging]=IDH_FILE_OPEN
+4 [Copy]=IDH_EDIT_COPY
+4 [Set/Delete Breakpoint]=IDH_BREAKAT
+4 [Re-debug]=IDH_RERUN
+4 [Go]=IDH_CONTINUE
+4 [Animate]=IDH_ANIMATE
+4 [Break]=IDH_ATTENTION
+4 [Run to Cursor]=IDH_RUNTO_CURSOR
+4 [Step Into]=IDH_RUNTO_GLOBAL
+4 [Step Over]=IDH_RUNTO_LOCAL
+4 [Run to Next Program]=IDH_RUNTO_NEXTPROGRAM
+4 [Data]=IDH_LIST
+4 [Watch Data]=IDH_DTRACE
+4 [Watch Conditional Expression]=IDH_DATACHK
+4 [Call Stack]=IDH_CALLS
+4 [Previous Statement]=IDH_TRACE_PREV
+4 [Next Statement]=IDH_TRACE_NEXT
+4 [Previous Procedure]=IDH_SECTION_TRACE_PREV
+4 [Next Procedure]=IDH_SECTION_TRACE_NEXT
+4 [Help]=IDH_CONTEXT_HELP
+3 Shortcut menu
+4 [Open Library]/[Open file name]=IDH_OPENINCLUDE
+4 [Set Breakpoint]/[Delete Breakpoint]=IDH_BREAKAT
+4 [Set Passage Count]/[Delete Passage Count]=IDH_COUNTAT
+4 [Run to Cursor]=IDH_RUNTO_CURSOR
+4 [Change Start Point to Cursor]=IDH_SKIP
+4 [Data]=IDH_LIST
+4 [Watch Data]=IDH_DTRACE
+4 [Linkage]=IDH_LINKAGE
+4 [Watch Conditional Expression]=IDH_DATACHK
+2 Menu commands
+3 [File] menu
+4 [Start Debugging]=IDH_FILE_OPEN
+4 [Recent Debugging]=IDH_DEBUG_OPEN
+4 [Exit]=IDH_APP_EXIT
+3 [Edit] menu
+4 [Copy]=IDH_EDIT_COPY
+3 [View] menu
+4 [Font]=IDH_SET_FONT
+4 [Color]=IDH_SET_COLOR
+4 [Automatic Format]=IDH_FORMAT_AUTO
+4 [Hexadecimal Format]=IDH_FORMAT_HEX
+4 [Toolbar]=IDH_VIEW_TOOLBAR
+4 [Status bar]=IDH_VIEW_STATUS_BAR
+3 [Search] menu
+4 [Find]=IDH_EDIT_FIND
+4 [Find Previous]=IDH_FIND_PREV
+4 [Find Next]=IDH_FIND_NEXT
+4 [Jump]=IDH_JUMP
+3 [Continue] menu
+4 [Re-debug]=IDH_RERUN
+4 [Go]=IDH_CONTINUE
+4 [Animate]=IDH_ANIMATE
+4 [Break]=IDH_ATTENTION
+4 [Change Start Point to Cursor]=IDH_SKIP
+4 [Run to Cursor]=IDH_RUNTO_CURSOR
+4 [Step Into]=IDH_RUNTO_GLOBAL
+4 [Step Over]=IDH_RUNTO_LOCAL
+4 [Run to Next Program]=IDH_RUNTO_NEXTPROGRAM
+4 [Specific Execution]=IDH_RUNTO
+4 [Specific Execution Condition]=IDH_RUNTO_CASE
+3 [Debug] menu
+4 [Where]=IDH_WHERE
+4 [Call Stack]=IDH_CALLS
+4 [Breakpoint]=IDH_BREAK
+4 [Passage Count]=IDH_COUNT
+4 [Update Passage Count Display]=IDH_COUNTUPDATE
+4 [Data]=IDH_LIST
+4 [Data Name List]=IDH_DATANAMELIST
+4 [Watch Data]=IDH_DTRACE
+4 [Linkage]=IDH_LINKAGE
+4 [Watch Conditional Expression]=IDH_DATACHK
+4 [Trace]=IDH_FTRACE_TOGGLE
+4 [Backward Trace]-[Previous Statement]=IDH_TRACE_PREV
+4 [Backward Trace]-[Next Statement]=IDH_TRACE_NEXT
+4 [Backward Trace]-[Previous Procedure]=IDH_SECTION_TRACE_PREV
+4 [Backward Trace]-[Next Procedure]=IDH_SECTION_TRACE_NEXT
+3 [Option] menu
+4 [Environments]=IDH_ENVIRON
+4 [Automatic Debugging]=IDH_AUTORUN
+4 [Output Log]=IDH_PUT_LOG
+3 [Window] menu
+4 [Cascade]=IDH_WINDOW_CASCADE
+4 [Tile Horizontally]=IDH_WINDOW_TILE_HORZ
+4 [Tile Vertically]=IDH_WINDOW_TILE_VERT
+4 [Arrange Icons]=IDH_WINDOW_ARRANGE
+4 [Close All]=IDH_WINDOW_CLOSE
+4 [Program List]=IDH_PROGRAM_LIST
+4 [Line Command]=IDH_COMMAND
+4 [Window names]=IDH_WINDOW_LIST_WINDOW
+3 [Help] menu
+4 [Help Topics]=IDH_HELP_INDEX
+4 [About]=IDH_APP_ABOUT
+2 Toolbar commands
+3 [Start Debugging]=IDH_FILE_OPEN
+3 [Copy]=IDH_EDIT_COPY
+3 [Set/Delete Breakpoint]=IDH_BREAKAT
+3 [Re-debug]=IDH_RERUN
+3 [Go]=IDH_CONTINUE
+3 [Animate]=IDH_ANIMATE
+3 [Break]=IDH_ATTENTION
+3 [Run to Cursor]=IDH_RUNTO_CURSOR
+3 [Step Into]=IDH_RUNTO_GLOBAL
+3 [Step Over]=IDH_RUNTO_LOCAL
+3 [Run to Next Program]=IDH_RUNTO_NEXTPROGRAM
+3 [Data]=IDH_LIST
+3 [Watch Data]=IDH_DTRACE
+3 [Watch Conditional Expression]=IDH_DATACHK
+3 [Call Stack]=IDH_CALLS
+3 [Previous Statement]=IDH_TRACE_PREV
+3 [Next Statement]=IDH_TRACE_NEXT
+3 [Previous Procedure]=IDH_SECTION_TRACE_PREV
+3 [Next Procedure]=IDH_SECTION_TRACE_NEXT
+3 [Help]=IDH_CONTEXT_HELP
+2 Line commands
+3 Font and Symbols describing line command format=IDH_SYNTAX
+3 Order of Category
+4 Continue
+5 CONTINUE command=IDH_COMMAND_CONTINUE
+5 RUNTO command=IDH_COMMAND_RUNTO
+5 SKIP command=IDH_COMMAND_SKIP
+5 RERUN command=IDH_COMMAND_RERUN
+4 Breakpoint
+5 BREAK command=IDH_COMMAND_BREAK
+5 DELETE command=IDH_COMMAND_DELETE
+4 Passage Count
+5 COUNT command=IDH_COMMAND_COUNT
+5 DELCOUNT command=IDH_COMMAND_DELCOUNT
+4 Data
+5 LIST command=IDH_COMMAND_LIST
+5 SET command=IDH_COMMAND_SET
+5 LINKAGE command=IDH_COMMAND_LINKAGE
+4 Watch Data
+5 DTRACE command=IDH_COMMAND_DTRACE
+5 DELDTR command=IDH_COMMAND_DELDTR
+5 MONITOR command=IDH_COMMAND_MONITOR
+5 DELMON command=IDH_COMMAND_DELMON
+4 Watch Conditional Expression
+5 DATACHK command=IDH_COMMAND_DATACHK
+5 DELDCHK command=IDH_COMMAND_DELDCHK
+4 Status
+5 ENV command=IDH_COMMAND_ENV
+5 STATUS command=IDH_COMMAND_STATUS
+5 SCOPE command=IDH_COMMAND_SCOPE
+5 WHERE command=IDH_COMMAND_WHERE
+5 CALLS command=IDH_COMMAND_CALLS
+4 Reappearance of Operation
+5 AUTORUN command=IDH_COMMAND_AUTORUN
+4 Terminate
+5 QUIT command=IDH_COMMAND_QUIT
+3 Order of Alphabet
+4 AUTORUN command=IDH_COMMAND_AUTORUN
+4 BREAK command=IDH_COMMAND_BREAK
+4 CALLS command=IDH_COMMAND_CALLS
+4 CONTINUE command=IDH_COMMAND_CONTINUE
+4 COUNT command=IDH_COMMAND_COUNT
+4 DATACHK command=IDH_COMMAND_DATACHK
+4 DELCOUNT command=IDH_COMMAND_DELCOUNT
+4 DELDCHK command=IDH_COMMAND_DELDCHK
+4 DELDTR command=IDH_COMMAND_DELDTR
+4 DELETE command=IDH_COMMAND_DELETE
+4 DELMON command=IDH_COMMAND_DELMON
+4 DTRACE command=IDH_COMMAND_DTRACE
+4 ENV command=IDH_COMMAND_ENV
+4 LINKAGE command=IDH_COMMAND_LINKAGE
+4 LIST command=IDH_COMMAND_LIST
+4 MONITOR command=IDH_COMMAND_MONITOR
+4 QUIT command=IDH_COMMAND_QUIT
+4 RERUN command=IDH_COMMAND_RERUN
+4 RUNTO command=IDH_COMMAND_RUNTO
+4 SCOPE command=IDH_COMMAND_SCOPE
+4 SET command=IDH_COMMAND_SET
+4 SKIP command=IDH_COMMAND_SKIP
+4 STATUS command=IDH_COMMAND_STATUS
+4 WHERE command=IDH_COMMAND_WHERE

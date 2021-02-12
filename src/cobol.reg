@@ -1,0 +1,340 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\Software\COBOL852]
+
+[HKEY_LOCAL_MACHINE\Software\COBOL852\COBOL85V3]
+
+[HKEY_LOCAL_MACHINE\Software\COBOL852\COBOL85V3\1.0]
+
+[HKEY_LOCAL_MACHINE\Software\Fujitsu]
+
+[HKEY_LOCAL_MACHINE\Software\Fujitsu\COBOL85]
+"CurrentVersion"="V30L10"
+"FMBHLANP"="C:\\FSC\\PCOBOL32"
+"FMBILANP"="C:\\FSC\\PCOBOL32"
+"Product_Directory"="C:\\FSC\\PCOBOL32\\"
+"RTS_CurrentVersion"="V30L10"
+"RTS_Product_Directory"="C:\\FSC\\PCOBOL32\\"
+
+[HKEY_LOCAL_MACHINE\Software\Fujitsu\Install]
+
+[HKEY_LOCAL_MACHINE\Software\Fujitsu\Install\COBOL85]
+"Install_Date"=hex:ed,a0,2d,95,50,dd,3d,09,4f,2a,51,4f,3e,69,2b,32,47,90,42,fc,\
+  6b,0c,45,b6,13,40,6e,23,58,df,67,82,59,b7,af,ca,8b,7b,88,ea,7d,80,04,92,16,\
+  98,10,77
+
+[HKEY_LOCAL_MACHINE\Software\Fujitsu\InstallFolder]
+
+[HKEY_LOCAL_MACHINE\Software\Fujitsu\InstallFolder\COBOL852]
+"StartupFolder"="C:\\windows\\Profiles\\All Users\\Start Menu\\Programs\\Fujitsu COBOL 3.0"
+
+[HKEY_LOCAL_MACHINE\Software\Fujitsu\InstallFolder\REG2]
+"StartupFolder"="C:\\windows\\Profiles\\All Users\\Start Menu\\Programs\\Fujitsu COBOL 3.0"
+
+[HKEY_LOCAL_MACHINE\Software\Fujitsu\PowerFRAMEVIEW]
+
+[HKEY_LOCAL_MACHINE\Software\Fujitsu\PowerFRAMEVIEW\COBOL85_32]
+"Product_Directory"="C:\\FSC\\PCOBOL32"
+
+[HKEY_LOCAL_MACHINE\Software\Fujitsu\PowerFRAMEVIEW\GEM]
+"Product_Directory"="C:\\FSC\\PCOBOL32\\"
+"VL"="130200"
+
+[HKEY_LOCAL_MACHINE\Software\Fujitsu\PowerFRAMEVIEW\PFV]
+"Product_Directory"="C:\\FSC\\PCOBOL32\\"
+"VL"="130200"
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\COBOL852]
+@="C:\\FSC\\PCOBOL32"
+"Path"="C:\\FSC\\PCOBOL32"
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\SoftCopy1]
+@="C:\\FSC\\REGSOFT"
+"Path"="C:\\FSC\\REGSOFT"
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\COBOL852]
+"DisplayName"="Fujitsu COBOL85"
+"UninstallString"="C:\\windows\\uninst.exe -fC:\\FSC\\PCOBOL32\\DeIsL1.isu -cC:\\FSC\\PCOBOL32\\F3RGCOB2.DLL"
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\SoftCopy1]
+"DisplayName"="Fujitsu COBOL Registration"
+"UninstallString"="C:\\windows\\uninst.exe -fC:\\FSC\\REGSOFT\\DeIsL1.isu -cC:\\FSC\\REGSOFT\\F3RGREG2.DLL"
+
+[HKEY_LOCAL_MACHINE\Software\SoftCopy1]
+
+[HKEY_LOCAL_MACHINE\Software\SoftCopy1\SoftCopy]
+
+[HKEY_LOCAL_MACHINE\Software\SoftCopy1\SoftCopy\1.0]
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment]
+"LIB"="C:\\windows\\system32;C:\\windows;C:\\windows\\system32\\wbem;C:\\FSC\\PCOBOL32;C:\\FSC\\PCOBOL32"
+"PATH"=hex(2):43,3a,5c,77,69,6e,64,6f,77,73,5c,73,79,73,74,65,6d,33,32,3b,43,\
+  3a,5c,77,69,6e,64,6f,77,73,3b,43,3a,5c,77,69,6e,64,6f,77,73,5c,73,79,73,74,\
+  65,6d,33,32,5c,77,62,65,6d,3b,43,3a,5c,46,53,43,5c,50,43,4f,42,4f,4c,33,32,\
+  00
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Environment]
+"lib"="C:\\FSC\\PCOBOL32"
+"path"="C:\\FSC\\PCOBOL32"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu]
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\COBOL85]
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\COBOL85\PROGRAMMING-STAFF]
+"EditorFileName"="C:\\FSC\\PCOBOL32\\F3BXE000.EXE /pstaff"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW]
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\*]
+"BUILD"="yes,%Local%,PFV,F3BXBBLD.EXE"
+"CM"="yes,%Local%,GEM,F3BXGG00.EXE"
+"DM"="yes,%Local%,PFV,F3BXDE00.EXE"
+"EDIT"="yes,%Local%,PFV,F3BXE000.EXE"
+"GEMSCP1"="no,%Local%,GEM,CHKOPEN.MCP"
+"GEMSCP2"="no,%Local%,GEM,CHKUPD.MCP"
+"GEMSCP3"="no,%Local%,GEM,GETOPEN.MCP"
+"GEMSCP4"="no,%Local%,GEM,CHKINDEL.MCP"
+"MONITOR"="no,%Local%,PFV,F3BXMMON.EXE"
+"PRINT"="no,%Local%,PFV,F3BXDPRT.EXE %Directory%\\%File%"
+"TM"="no,%Local%,PFV,F3BXTF00.EXE"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\.C]
+"PFV_FileInf"="VAR,223,0,0,"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\.CBL]
+"PFV_FileInf"="VAR,223,1,6,COBOL"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\.COB]
+"PFV_FileInf"="VAR,223,1,6,COBOL"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\.DPR]
+"EDIT"="yes,%Local%,DELPHI,DELPHI32.EXE \"%Directory%\\%File%\""
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\.EXE]
+"DEBUG"="no,%Local%,PFV,SVD32.SCP"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\.FRT]
+"PFV_FileInf"="VAR,223,1,8,"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\.JOB]
+"EXCJOB"="no,%Local%,GEM,F3BXJEXC.EXE"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\.MAK]
+"EDIT"="no,%Local%,PFV,F3BXBMK0.EXE"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\.SCP]
+"DEBUG"="no,%Local%,PFV,F3BXCDBG.SCP"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\.VBP]
+"EDIT"="yes,%Local%,VBASIC,VB32.EXE \"%Directory%\\%File%\""
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\BUILD]
+"Tool1"="Standard Builder,yes,%Local%,PFV,F3BXBBLD.EXE"
+"Tool2"="VB Build 16,no,%Local%,PFV,VBBLD16.SCP"
+"Tool3"="VB Build 32,no,%Local%,PFV,VBBLD32.SCP"
+"ToolNums"="3"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\CM]
+"Tool1"="Configuration Management,yes,%Local%,GEM,F3BXGG00.EXE"
+"ToolNums"="1"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\DDE]
+"AppliMaxLen"=dword:00000040
+"DDETimeOut"=dword:0000003c
+"EnumServerMax"=dword:00000032
+"TopicmaxLen"=dword:00000040
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\DEBUG]
+"Tool1"="COBOL Debugger(16),no,%Local%,PFV,SVD.SCP"
+"Tool2"="COBOL Debugger(32),no,%Local%,PFV,SVD32.SCP"
+"Tool3"="Script Debugger,no,%Local%,PFV,F3BXCDBG.SCP"
+"ToolNums"="3"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\DELPHI]
+"Product_Directory"=" "
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\DM]
+"Tool1"="Standard Development Manager,yes,%Local%,PFV,F3BXDE00.EXE"
+"ToolNums"="1"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\EDIT]
+"Tool1"="DELPHI32,yes,%Local%,DELPHI,DELPHI32.EXE \"%Directory%\\%File%\""
+"Tool2"="VISUAL BASIC16,yes,%Local%,VBASIC,VB.EXE %Directory%\\%File%"
+"Tool3"="VISUAL BASIC32,yes,%Local%,VBASIC,VB32.EXE \"%Directory%\\%File%\""
+"Tool4"="Standard Editor,yes,%Local%,PFV,F3BXE000.EXE"
+"Tool5"="Standard Makefile Editor,no,%Local%,PFV,F3BXBMK0.EXE"
+"ToolNums"="5"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\ENCAPSULATOR]
+"PATHNums"="5"
+"TOOLPATH1"="PFV"
+"TOOLPATH2"="GEM"
+"TOOLPATH3"="VBASIC"
+"TOOLPATH4"="DELPHI"
+"TOOLPATH5"="PFORM_32"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\EXCJOB]
+"Tool1"="Exec Job,no,%Local%,GEM,F3BXJEXC.EXE"
+"ToolNums"="1"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\Executer]
+"ICON"=" "
+"PATH"=" "
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\F3BXMSRV]
+"16bitSendCompatible"="1"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\File_Type]
+"C"="C Source"
+"CBL"="COBOL Source"
+"COB"="COBOL Source"
+"DPR"="DELPHI Project File"
+"EXE"="Execute File"
+"FRT"="FORTRAN Source"
+"JOB"="Exec Job Option"
+"MAK"="Makefile"
+"SCP"="Script Source"
+"VBP"="VB Project File"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\GEM]
+"B_Server"="NO"
+"Environment_Directory"="C:\\FSC\\PCOBOL32\\"
+"M_Server"="NO"
+"MUTY_WSMGR_Server"="Yes"
+"MUTY_WSMGR_WsmgrModule"=" "
+"Product_Directory"="C:\\FSC\\PCOBOL32\\"
+"VL"="130200"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\GEMSCP1]
+"Tool1"="Check Out->Edit,no,%Local%,GEM,CHKOPEN.MCP"
+"ToolNums"="1"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\GEMSCP2]
+"Tool1"="Check Out->Edit->Check In,no,%Local%,GEM,CHKUPD.MCP"
+"ToolNums"="1"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\GEMSCP3]
+"Tool1"="Retrieve->View,no,%Local%,GEM,GETOPEN.MCP"
+"ToolNums"="1"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\GEMSCP4]
+"Tool1"="Check In->Delete,no,%Local%,GEM,CHKINDEL.MCP"
+"ToolNums"="1"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\Interpreter]
+"MsgParam"=dword:00000020
+"MsgShow"=dword:00000001
+"MsgTimeOut"=dword:0000003c
+"MsgVarMaxLen"=dword:0000001f
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\MONITOR]
+"Tool1"="Standard Message Monitor,no,%Local%,PFV,F3BXMMON.EXE"
+"ToolNums"="1"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\MUTY]
+"Tool1"="Global Server Cooperation(TCP/IP),yes,%Local%,GEM,F3BXTMUT.EXE"
+"ToolNums"="1"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\PFV]
+"Environment_Directory"="C:\\FSC\\PCOBOL32\\"
+"File_CommonInf"="8"
+"File_ConvertInf"="sjis,"
+"Product_Directory"="C:\\FSC\\PCOBOL32\\"
+"Script_Directory"="C:\\FSC\\PCOBOL32\\"
+"Timeout_Seconds"="30000"
+"VL"="130200"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\PFVDM]
+"Menu1"="&Debug...,DEBUG,START,ENABLE"
+"Menu2"="Check &Out->Edit,GEMSCP1,START,DISABLE"
+"Menu3"="Check Out->&Edit->Check In,GEMSCP2,START,DISABLE"
+"Menu4"="&Retrieve->View,GEMSCP3,START,DISABLE"
+"Menu5"="Check &In->Delete,GEMSCP4,START,DISABLE"
+"MenuNums"="5"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\PFVED]
+"CTRL+C"="CMD_CPY"
+"CTRL+D"="CMD_DIS"
+"CTRL+E"="CMD_END"
+"CTRL+N"="CMD_NEW"
+"CTRL+O"="CMD_OPE"
+"CTRL+P"="CMD_LIS"
+"CTRL+R"="CMD_RED"
+"CTRL+S"="CMD_SAV"
+"CTRL+T"="CMD_TAG"
+"CTRL+V"="CMD_PAS"
+"CTRL+X"="CMD_CUT"
+"CTRL+Z"="CMD_UND"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\PFVEDKEY]
+"COBOL"="C:\\FSC\\PCOBOL32\\COBOL.KEY"
+"FREECOB"="C:\\FSC\\PCOBOL32\\COBOL.KEY"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\PFVEDTEF]
+"COBOL"="C:\\FSC\\PCOBOL32\\COBOL.TEF"
+"FREECOB"="C:\\FSC\\PCOBOL32\\COBOL.TEF"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\PFVMAKE]
+"COBOL.EXE"="PFV,F1CDBCC4.EXE"
+"IMPLIBW.EXE"="PFV,F1CDBCIM.EXE"
+"LIBW.EXE"="PFV,F1CDBCLB.EXE"
+"LINKW.EXE"="PFV,F1CDBCLN.EXE"
+"RCW.EXE"="PFV,F1CDBCRC.EXE"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\PRINT]
+"Tool1"="Standard Print,no,%Local%,PFV,F3BXDPRT.EXE %Directory%\\%File%"
+"ToolNums"="1"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\ScriptDebugger]
+"EngnName"="F3BXCEGN.DLL"
+"FileName"="F3BXCDBG.EXE"
+"HelpName"="F3BXCDBG.HLP"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\SystemMessage]
+"DLLFileName1"="F3BXCENC.DLL"
+"DLLFileName10"="F3BXCDSP.DLL"
+"DLLFileName11"="F3BXCFIL.DLL"
+"DLLFileName12"="F3BXCFIO.DLL"
+"DLLFileName13"="F3BXCLST.DLL"
+"DLLFileName14"="F3BXCMAT.DLL"
+"DLLFileName15"="F3BXCSTR.DLL"
+"DLLFileName16"="F3BXCSYS.DLL"
+"DLLFileName17"="F3BXCTIM.DLL"
+"DLLFileName18"="F3BXCTYP.DLL"
+"DLLFileName19"="F3BXCWND.DLL"
+"DLLFileName2"="F3BXCARY.DLL"
+"DLLFileName3"="F3BXCBIT.DLL"
+"DLLFileName4"="F3BXCCLP.DLL"
+"DLLFileName5"="F3BXCCMD.DLL"
+"DLLFileName6"="F3BXCDAT.DLL"
+"DLLFileName7"="F3BXCDDE.DLL"
+"DLLFileName8"="F3BXCDLG.DLL"
+"DLLFileName9"="F3BXCDLL.DLL"
+"DLLNums"=dword:00000013
+"DLLPathName"=" "
+"ProductSection"="PFV"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\TM]
+"Tool1"="Standard Tool Manager,no,%Local%,PFV,F3BXTF00.EXE"
+"ToolNums"="1"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\TOOL]
+"BUILD"="Build"
+"CM"="Configuration Management"
+"DEBUG"="Debug"
+"DM"="Development Manager"
+"EDIT"="Edit"
+"EXCJOB"="Exec Job"
+"GEMSCP1"="Check Out->Edit"
+"GEMSCP2"="Check Out->Edit->Check In"
+"GEMSCP3"="Retrieve->View"
+"GEMSCP4"="Check In->Delete"
+"MONITOR"="Message Monitor"
+"MUTY"="Global Server Cooperation"
+"PRINT"="Print"
+"TM"="Tool Manager"
+
+[HKEY_USERS\S-1-5-21-0-0-0-1000\Software\Fujitsu\PowerFRAMEVIEW\VBASIC]
+"Product_Directory"=" "
+

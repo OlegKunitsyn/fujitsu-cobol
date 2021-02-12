@@ -1,0 +1,8 @@
+
+[Compile Options]
+
+[Linkage Files]
+Files=F3BICIMP.LIB LIBC.LIB KERNEL32.LIB USER32.LIB
+
+[COBOL85]
+Language=E

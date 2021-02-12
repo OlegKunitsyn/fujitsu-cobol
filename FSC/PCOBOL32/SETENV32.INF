@@ -1,0 +1,67 @@
+[progman.groups]
+    "PowerGEM Plus 3.0",PGEMPlus.GRP
+
+[PowerGEM Plus 3.0]
+    "PowerFRAMEVIEW","PFV.EXE",,app.pgem1
+    "Script Help","F3BXCHLP.HLP","WINHLP32.EXE",app.pgem4
+
+[app.copy.appstuff]
+    #app.pgem1,0:,2000000
+    #app.pgem2,0:,2000000
+    #app.pgem3,0:,2000000
+    #app.pgem4,0:,2000000
+    #app.pgem5,0:,2000000
+    #app.pgem6,0:, 400000,COBOL32\
+
+[Install]
+    Product="PowerGEM Plus 3.0"
+    VersionLevel="V3.0L20"
+
+[dialog]
+    caption="PowerGEM Plus 3.0 Start-up information setup"
+    product="PowerGEM Plus 3.0"
+    exitmsg="Definition of PowerGEM Plus 3.0 environment was completed."
+    unloadmsg="Insert the first floppy disk in the drive"
+
+[data]
+    defdir=PGEM32
+
+[disks]
+    1=,"PowerGEM Disk 1"
+    2=,"PowerGEM Disk 2"
+    3=,"PowerGEM Disk 3"
+    4=,"PowerGEM Disk 4"
+    5=,"PowerGEM Disk 5"
+    6=COBOL32\,"PowerGEM Disk 5"
+
+[app.pgem1]
+
+[app.pgem2]
+
+[app.pgem3]
+
+[app.pgem4]
+
+[app.pgem5]
+
+[app.pgem6]
+
+[check.run.app]
+    0:,,F3BXMSRV.EXE,"Cannot install because PowerGEM Plus is running."
+
+[Regmodify]
+    f3bxs100.reg,app.pgem1
+    f3bxs100.reg,app.pgem2
+    f3bxs100.reg,app.pgem3
+    f3bxs100.reg,app.pgem4
+    f3bxs100.reg,app.pgem5
+    f3bxs100.reg,app.pgem6
+
+[call.proc]
+    DLL=F3BXS000.DLL
+    before_file_copy=pre_copy
+    after_file_copy=post_copy
+    before_file_delete=pre_delete
+
+[main.window]
+    background = 0

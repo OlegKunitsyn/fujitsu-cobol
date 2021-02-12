@@ -1,0 +1,74 @@
+:Base F3BXE000.HLP>main
+:Title Editor
+1 How to...
+2 Selecting the Text to Be Edited=PROC_AP001
+2 Canceling and Reexecuting the Operation Last Executed=PROC_AP005
+2 Deleting Text=PROC_AP015
+2 Cutting, Copying, and Pasting Text=PROC_AP020
+2 Searching for and Changing Character Strings=PROC_AP025
+2 Specifying Character Strings=PROC_AP026
+2 Specifying the Line Number Input Field of a Command=PROC_AP027
+2 Moving to a Particular Location=PROC_AP030
+2 Moving to a Particular Location of a Specified File=PROC_AP033
+2 Editing with Command Keys=PROC_AP035
+2 Changing an Edit Window=PROC_AP040
+2 File Details=PROC_AP066
+2 Printing a File=PROC_AP070
+1 Keyboard
+2 Shortcut Keys Common to All Modes=KEY_STA
+2 Shortcut Keys for Editing Text Mode=KEY_EDT
+2 Shortcut Keys for Viewing Text Mode=KEY_LST
+2 Shortcut Keys for Editing Hexadecimal Mode=KEY_HEDT
+2 Shortcut Keys for Viewing Hexadecimal Mode=KEY_HLST
+1 Commands
+2 File menu Commands
+3 New=HELPID_FILE_MCRT_WS
+3 Open=HELPID_FILE_MOPEN_WS
+3 Save=HELPID_FILE_MSAVE_WS
+3 Save As=HELPID_FILE_MNSAVE_WS
+3 Merge=HELPID_FILE_MMER
+3 Print=HELPID_FILE_MLIST
+3 Information=HELPID_FILE_MDSP
+3 Close=HELPID_FILE_MEND
+3 Exit=HELPID_FILE_MAEND
+2 Edit menu Commands
+3 Undo=HELPID_EDIT_MUNDO
+3 Redo=HELPID_EDIT_MREDO
+3 Cut=HELPID_EDIT_MCUT
+3 Copy=HELPID_EDIT_MWCOPY
+3 Paste=HELPID_EDIT_MPASTE
+3 Delete=HELPID_EDIT_MDEL
+3 Box Mode=HELPID_EDIT_MBOX
+3 Replace=HELPID_EDIT_MCHG
+3 Replace Again=HELPID_EDIT_MCCHG
+3 Repeat=HELPID_EDIT_MDUP
+3 Shift Left=HELPID_EDIT_MLSFT
+3 Shift Right=HELPID_EDIT_MRSFT
+3 Renumber=HELPID_EDIT_MREN
+3 Template=HELPID_EDIT_TEMPLATE
+2 Locate Menu Commands
+3 Top=HELPID_LOC_MTOP
+3 Bottom=HELPID_LOC_MBTM
+3 Goto Line=HELPID_LOC_MLOC
+3 Pair=HELPID_LOC_MPAIR
+3 Find=HELPID_LOC_MSEA
+3 Find Again=HELPID_LOC_MCSEA
+3 Tag Jump=HELPID_LOC_MTAG
+2 View Menu Commands
+3 Display Format=HELPID_LIST_MWFO
+3 Font=HELPID_LIST_MFONT
+3 Toolbar=HELPID_LIST_MTOOL
+3 Statusbar=HELPID_LIST_MSTATUS
+2 Tool Menu Commands
+3 Compile=HELPID_REL_MCOMP
+3 Environment=HELPID_REL_MENV
+2 Option Menu Commands
+3 Customize Command Key=HELPID_OPT_MADU
+3 Environment (Current Window)=HELPID_OPT_MEVST
+3 Environment (Basic Status)=HELPID_OPT_MEVST2
+3 Setup Environment for PowerFRAMEVIEW=HELPID_OPT_ENV
+2 Window Menu Commands
+3 Cascade=HELPID_WIN_CAS
+3 Tile=HELPID_WIN_TILE
+3 Arrange Icons=HELPID_WIN_ICO
+3 List File Names=HELPID_WIN_FILE

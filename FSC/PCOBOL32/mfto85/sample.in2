@@ -1,0 +1,24 @@
+**-------------------------------------------------------------------**
+**  Option file (sample)                                             **
+**-------------------------------------------------------------------**
+* Specify the folder name where the Destination file is stored
+OUT-FILE-DIR=C:\CONV\OUT\
+*
+* Specify the folder name where the List file is saved
+OUT-LIST-DIR=C:\CONV\OUT\
+*
+* Specify the file type
+ORGANIZATION=IDX
+*
+* Specify the record format
+RECORD-FORMAT=F
+*
+* Specify the record length
+RECORD-LENGTH=80
+*
+* Specify options of a signed zoned-decimal item (with no SEPARATE)
+ZONED-DECIMAL=1,1,TRAILING
+*
+* Specify a relative position in the record of the index-data-item
+INDEX-DATA-ITEM=2
+*

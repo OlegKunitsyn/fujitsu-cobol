@@ -1,0 +1,426 @@
+;TOOL=PowerGEM Plus
+;
+;FUNCTION=Template
+[Source program structure]
+ IDENTIFICATION DIVISION.
+ PROGRAM-ID.
+ ENVIRONMENT DIVISION.
+* CONFIGURATION SECTION.
+*  SOURCE-COMPUTER.  Computer-name.
+*  OBJECT-COMPUTER.  Computer-name.
+*  SPECIAL-NAMES.
+* INPUT-OUTPUT SECTION.
+*  FILE-CONTROL.
+*  I-O-CONTROL.
+*
+ DATA DIVISION.
+* FILE SECTION.
+* WORKING-STORAGE SECTION.
+* CONSTANT SECTION.
+* LINKAGE SECTION.
+*
+ PROCEDURE DIVISION.
+* DECLARATIVES.
+*
+* END DECLARATIVES.
+
+[Program name paragraph]
+ PROGRAM-ID.
+*                IS COMMON
+*                   INITIAL PROGRAM
+
+[Configuration section]
+ CONFIGURATION SECTION.
+* SOURCE-COMPUTER.
+* OBJECT-COMPUTER.
+* SPECIAL-NAMES.
+
+[Source computer paragraph]
+ SOURCE-COMPUTER.
+*                     WITH DEBUGGING MODE
+
+[Object computer paragraph]
+ OBJECT-COMPUTER.
+*                     PROGRAM COLLATING SEQUENCE IS Alphabet-name
+
+[Special names paragraph]
+ SPECIAL-NAMES.
+
+[Input-output section]
+ INPUT-OUTPUT  SECTION.
+* FILE-CONTROL.
+* I-O-CONTROL.
+
+[File control paragraph]
+ FILE-CONTROL.
+
+[I-O-control paragraph]
+ I-O-CONTROL.
+
+[SELECT clause(Sequential file)]
+     SELECT @@ ASSIGN TO @@
+         ORGANIZATION IS SEQUENTIAL
+         FILE STATUS  IS @@.
+*        LOCK MODE clause
+
+[SELECT clause(Relative file)]
+     SELECT @@ ASSIGN TO @@
+         ORGANIZATION IS RELATIVE
+         ACCESS  MODE IS RANDOM
+         FILE STATUS  IS @@
+         RELATIVE KEY IS @@.
+*        LOCK MODE clause
+
+[SELECT clause(Indexed file)]
+     SELECT @@ ASSIGN TO @@
+         ORGANIZATION IS INDEXED
+         ACCESS  MODE IS SEQUENTIAL
+         FILE STATUS  IS @@
+         RECORD  KEY  IS @@.
+*        ALTERNATE RECORD KEY clause
+*        LOCK MODE clause
+
+[SELECT clause(Presentation file)]
+     SELECT @@ ASSIGN TO @@
+         ORGANIZATION IS SEQUENTIAL
+         FILE STATUS  IS @@
+         FORMAT       IS @@
+         GROUP        IS @@
+         SYMBOLIC  DESTINATION IS @@
+         DESTINATION-1         IS @@
+         DESTINATION-2         IS @@
+         DESTINATION-3         IS @@
+         PROCESSING  MODE      IS @@
+         SELECTED  FUNCTION    IS @@
+         UNIT  CONTROL         IS @@
+         MESSAGE  MODE         IS @@
+         END  KEY              IS @@
+         SESSION  CONTROL      IS @@
+         PROCESSING  CONTROL   IS @@
+         MESSAGE  CLASS        IS @@
+         PROCESSING  TIME      IS @@
+         MESSAGE  CODE         IS @@
+         MESSAGE  OWNER        IS @@.
+
+[File section]
+ FILE  SECTION.
+
+[File description entry]
+ FD  @@
+*         BLOCK CONTAINS clause
+*         RECORD clause
+
+[Sort-merge file description entry]
+ SD  @@
+*         RECORD clause
+
+[Working-storage section]
+ WORKING-STORAGE SECTION.
+
+[Constant section]
+ CONSTANT SECTION.
+
+[Linkage section]
+ LINKAGE SECTION.
+
+[Report section]
+ REPORT SECTION.
+
+[77-level description entry]
+ 77  @@  PICTURE @@ VALUE @@ .
+
+[Record description entry]
+ 01  @@.
+     02  @@.
+       03  @@ PICTURE @@ VALUE @@.
+       03  @@ PICTURE @@ VALUE @@.
+       03  @@ PICTURE @@ VALUE @@.
+     02  @@.
+       03  @@ PICTURE @@ VALUE @@.
+       03  @@ PICTURE @@ VALUE @@.
+       03  @@ PICTURE @@ VALUE @@.
+
+[Data description entry(Group item)]
+*Level-number  Data-name
+*              REDEFINES clause
+*              USAGE clause
+*              SIGN clause
+*              OCCURS clause
+*              VALUE clause
+*              CHARACTER TYPE clause
+*              PRINTING POSITION clause
+
+[Data description entry(Elementary item)]
+*Level-number  Data-name
+*              REDEFINES clause
+*              PICTURE clause
+*              USAGE clause
+*              SIGN clause
+*              OCCURS clause
+*              SYNCHRONIZED clause
+*              JUSTIFIED clause
+*              BLANK WHEN ZERO clause
+*              VALUE clause
+*              CHARACTER TYPE clause
+*              PRINTING POSITION clause
+
+[Data description entry(RENAMES clause)]
+     66  @@  RENAMES  @@  THRU  @@.
+
+[Data description entry(VALUE clause)]
+     88  @@  VALUE @@.
+
+[Accepts from SYSIN]
+     ACCEPT @@
+
+[Accepts from DATE]
+     ACCEPT @@ FROM DATE
+
+[Accepts from DAY]
+     ACCEPT @@ FROM DAY
+
+[Accepts from DAY-OF-WEEK]
+     ACCEPT @@ FROM DAY-OF-WEEK
+
+[Accepts from TIME]
+     ACCEPT @@ FROM TIME
+
+[Transfers control to another program in the run unit]
+     CALL @@ USING @@
+
+[Initializes a program to be called next time]
+     CANCEL @@
+
+[Computes an arithmetic]
+     COMPUTE @@ = @@
+
+[Computes an arithmetic rounded]
+     COMPUTE @@ ROUNDED = @@
+
+[Copies library text to a source program]
+     COPY @@.
+
+[Copies library text as it is or partially modify it to copy]
+     COPY @@ REPLACING == @@ == BY == @@ ==.
+
+[Replaces the prefix or suffix in library text to copy]
+     COPY @@ DISJOINING @@ JOINING @@ PREFIX.
+
+[Displays small amounts of data]
+     DISPLAY @@
+
+[Displays literal upon device]
+     DISPLAY @@ UPON @@
+
+[Performs division and obtains the quotient and the remainder]
+     DIVIDE @@ BY @@ GIVING @@ REMAINDER @@
+
+[Performs division and obtains the quotient and the remainder rounded]
+     DIVIDE @@ BY @@ GIVING @@ ROUNDED REMAINDER @@
+
+[Specifies the secondary entry point for the called program]
+     ENTRY @@ USING @@
+
+[Evaluates multiple conditions and executes the statements corresponding to the evaluation result]
+     EVALUATE  @@
+       WHEN  @@   @@
+       WHEN  @@   @@
+       WHEN  @@   @@
+       WHEN  OTHER @@
+     END-EVALUATE
+
+[Specifies the logical end of a called program]
+     EXIT PROGRAM
+
+[Passes control from one point in a procedure division to another]
+     GO TO @@
+
+[Passes control from one point in a procedure division to another depending on the value]
+     GO TO @@ @@ DEPENDING ON @@
+
+[Evaluates a condition and executes the statement corresponding to the result of the evaluation]
+     IF  @@
+        THEN  @@
+        ELSE  @@
+     END-IF
+
+[Initializes a data item]
+     INITIALIZE @@
+
+[Initializes a data item by specified value]
+     INITIALIZE @@ REPLACING @@ DATA BY @@
+
+[Counts the occurrences of a character string]
+     INSPECT @@ TALLYING @@ FOR ALL @@
+
+[Counts the occurrences of a character string and replaces the string]
+     INSPECT @@ REPLACING @@ FOR ALL @@ BY @@
+
+[Replaces a character string]
+     INSPECT @A@ CONVERTING @B@ TO @C@
+
+[Moves data from one data item to another]
+     MOVE @@ TO @@
+
+[A statement is executed only once]
+     PERFORM @@
+
+[A statement is executed as many times as specified]
+     PERFORM @@  @@ TIMES
+
+[A statement is executed repeatedly until conditions are satisfied]
+     PERFORM @@  UNTIL @@
+
+[The value of data item or index-name is changed according to the number of executions while a statement is executed repeatedly until conditions are satisfied]
+     PERFORM @@  VARYING @@ FROM @@ BY @@ UNTIL @@
+
+[A group of statements is executed as many times as specified]
+     PERFORM  @@ TIMES
+         @@
+         @@
+         @@
+     END-PERFORM
+
+[A group of statements is executed repeatedly until conditions are satisfied]
+     PERFORM  UNTIL @@
+         @@
+         @@
+         @@
+     END-PERFORM
+
+[The value of data item or index-name is changed according to the number of executions while a group of statements is executed repeatedly until conditions are satisfied]
+     PERFORM VARYING @@ FROM @@ BY @@ UNTIL @@
+         @@
+         @@
+         @@
+     END-PERFORM
+
+[A group of statements is executed repeatedly without any condition]
+     PERFORM NO LIMIT
+         @@
+         @@
+         @@
+     END-PERFORM
+
+[Specifies passing control to the inspection process of the corresponding in-line PERFORM statement]
+     EXIT TO TEST OF PERFORM
+
+[Specifies the exit of an in-line PERFORM statement]
+     EXIT PERFORM
+
+[Table elements are searched in sequence]
+     SEARCH  @@  VARYING  @@
+       AT END @@
+         WHEN @@ @@
+         WHEN @@ @@
+         WHEN @@ @@
+     END-SEARCH
+
+[Table elements aligned in ascending or descending order are searched unsuccessively]
+     SEARCH  ALL  @@
+       AT  END  @@
+         WHEN  @@
+               @@
+     END-SEARCH
+
+[Table element indexes are set]
+     SET @@ TO @@
+
+[The value of index-name is increased]
+     SET @@ UP BY @@
+
+[The value of index-name is decreased]
+     SET @@ DOWN BY @@
+
+[A run unit of execution terminates]
+     STOP @@
+
+[A run unit of execution terminates and the control is transferred to the operating system]
+     STOP RUN
+
+[Links character-strings]
+     STRING @@ @@ DELIMITED BY @@ INTO @@
+
+[Unlinks Character-strings]
+     UNSTRING @@ DELIMITED BY @@ INTO @@ @@
+
+[Terminates file processing]
+     CLOSE @@
+
+[Deletes a record from a mass storage file]
+     DELETE @@ RECORD
+
+[Opens by INPUT mode]
+     OPEN INPUT @@
+
+[Opens by OUTPUT mode]
+     OPEN OUTPUT @@
+
+[Opens by I-O mode]
+     OPEN I-O @@
+
+[Opens by EXTEND mode]
+     OPEN EXTEND @@
+
+[Records are read in order]
+     READ @@ NEXT RECORD
+       AT END @@
+
+[Records are read at random]
+     READ @A@ KEY IS @B@
+       INVALID KEY @@
+
+[Records are rewritten in a mass storage file]
+     REWRITE @@
+
+[Files are allocated logically to the record which is specifed key]
+     START  @@  KEY  =  @@
+         INVLAID KEY @@
+
+[Files are allocated logically to the record which is larger than specifed key]
+     START  @@  KEY  >  @@
+         INVLAID KEY @@
+
+[Files are allocated logically to the record which is specifed key or larger]
+     START  @@  KEY  >=  @@
+         INVLAID KEY @@
+
+[Files are allocated logically to the record which is the beginning of the key of reference]
+     START @@ FIRST RECORD
+
+[Files are allocated logically to the record which is the ending of the key of reference]
+     START @@ FIRST RECORD WITH REVERSED ORDER
+
+[Specifies start of an I-O error handling procedure]
+ @@  SECTION.
+     USE AFTER STANDARD ERROR PROCEDURE ON @@
+
+[Writes records to a file]
+     WRITE @@
+        INVLAID KEY @@
+
+[Writes records to a file after advancing line]
+     WRITE @@ AFTER ADVANCING @@
+
+[Writes records to a file after advancing page]
+     WRITE @@ AFTER ADVANCING PAGE
+
+[Delivers a record to the first step of a sorting operation]
+     RELEASE @@
+
+[Receives the sorted or merged record from the final step of a sorting or merging operation]
+     RETURN @@ RECORD
+       AT END @@
+
+[Sorts records in the order determined by the key item values]
+     SORT @@
+        @@
+        USING  @@
+        GIVING @@
+
+[Merges two or more files together]
+     MERGE @@
+        @@
+        USING  @@ @@
+        GIVING @@
+

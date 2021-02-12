@@ -1,0 +1,20 @@
+:Base F3bxm000.hlp>main
+:Title Setup Environment for PowerFRAMEVIEW
+1 Overviews
+2 Using Setup Environment=HELPID_USING_ENV_SETUP
+2 Overview of the Setup Environment Process=HELPID_Overview_of_Setup_Environment_Process
+2 Overview of Concept=HELPID_Overview_of_Concepts
+1 Tool Incorporation
+2 Extension=HELPID_EXT
+2 Tool Class=HELPID_TOOLNAME
+2 Install Folder
+3 Install Folder=HELPID_TOOLEXIST
+3 Edit Script Path=HELPID_SCRIPTEDT
+1 Start up Information=HELPID_TOOLEXE
+1 Associate=HELPID_TOOLACT
+1 Development Manager Menu=HELPID_MENU
+1 Set File Information
+2 Common Information=HELPID_FILECOMM
+2 PowerFRAMEVIEW Editor=HELPID_FILEINF
+1 Set Server Cooperation
+2 Global Server Cooperation=HELPID_GSVRNET

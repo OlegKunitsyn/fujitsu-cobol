@@ -1,0 +1,89 @@
+;*****************************************************
+; äJî≠œ»∞ºﬁ¨/¬∞Ÿœ»∞ºﬁ¨/œ∏€œ»∞ºﬁ¨/GEM/¥√ﬁ®¿ÇÃ⁄ºﬁΩƒÿçÌèúèÓïÒ
+;*****************************************************
+[HKEY_CURRENT_USER\SoftWare\Fujitsu\PowerFRAMEVIEW\GEM]
+@(WILD)MEXEC            =
+@(WILD)KEXEC            =
+@(WILD)UEXEC            =
+@(WILD)MUTY_            =
+@(WILD)CM_              =
+M_Server                =
+B_Server                =
+
+[HKEY_CURRENT_USER\SoftWare\Fujitsu\PowerFRAMEVIEW\*]
+MUTY                    =
+BUTY                    =
+
+[HKEY_CURRENT_USER\SoftWare\Fujitsu\PowerFRAMEVIEW\ScriptDebugger]
+WindowInfFlags          =
+ScriptWindowInf         =
+
+[HKEY_CURRENT_USER\SoftWare\Fujitsu\PowerFRAMEVIEW\PFV]
+@(WILD)DM_              =
+TOOL_FILE               =
+EDIT.Printer            =
+PRINT.Printer           =
+EDIT_Width              =
+EDIT_Height             =
+EDIT_XCoordinates       =
+EDIT_YCoordinates       =
+
+;*****************************************************
+; ÀﬁŸ¿ﬁ/“≤∏Ãß≤Ÿ¥√ﬁ®¿ÇÃ⁄ºﬁΩƒÿçÌèúèÓïÒ
+;*****************************************************
+[HKEY_CURRENT_USER\SoftWare\Fujitsu\PowerFRAMEVIEW\PFVMKMF_32]
+SOURCE_DIRECTORY        =
+LINK_DIRECTORY          =
+TEMPLATE_DIRECTORY      =
+DEPEND_DIRECTORY        =
+MKMF_XCoordinates       =
+MKMF_YCoordinates       =
+MKMF_TOOLBAR            =
+MKMF_STATUSBAR          =
+MKMF_DEFFILE            =
+
+[HKEY_CURRENT_USER\SoftWare\Fujitsu\PowerFRAMEVIEW\PFVBUILDER]
+
+[HKEY_CURRENT_USER\SoftWare\Fujitsu\PowerFRAMEVIEW\PFVBLDSUF]
+
+;*****************************************************
+; ¥√ﬁ®¿ÇÃ⁄ºﬁΩƒÿçÌèúèÓïÒ
+;*****************************************************
+[HKEY_CURRENT_USER\SoftWare\Fujitsu\PowerFRAMEVIEW\PFVED]
+
+[HKEY_CURRENT_USER\SoftWare\Fujitsu\PowerFRAMEVIEW\PFVED1]
+
+[HKEY_CURRENT_USER\SoftWare\Fujitsu\PowerFRAMEVIEW\EDIT_DEVICES]
+
+[@(WILD)HKEY_CURRENT_USER\SoftWare\Fujitsu\PowerFRAMEVIEW\EDIT,]
+
+[HKEY_CURRENT_USER\SoftWare\Fujitsu\PowerFRAMEVIEW\PRINT_DEVICES]
+
+[@(WILD)HKEY_CURRENT_USER\SoftWare\Fujitsu\PowerFRAMEVIEW\PRINT,]
+
+;*****************************************************
+; “Øæ∞ºﬁ”∆¿ÇÃ⁄ºﬁΩƒÿçÌèúèÓïÒ
+;*****************************************************
+[HKEY_CURRENT_USER\SoftWare\Fujitsu\PowerFRAMEVIEW\PFVMONITOR_32]
+
+;*****************************************************
+; PowerFRAMEVIEW∑∞ÇÃçÌèúèÓïÒ
+;*****************************************************
+[HKEY_CURRENT_USER\SoftWare\Fujitsu\PowerFRAMEVIEW]
+
+;*****************************************************
+; GEMÇÃÃß≤ŸçÌèúèÓïÒ
+;*****************************************************
+[@(FILE)]
+@GEMKENV.*         =       
+*.gid              =       
+*.txt              =       
+PGEMENV.*          =       
+F3BXGL00.DLL       =
+CHKWSGEM.EXE       =
+LSTWSGEM.EXE       =
+F3BXDOA2.DLL       =
+F3BXDOAS.DLL       =
+F3BXGK00.DLL       =
+F3BXGU00.DLL       =
+F3BXGU10.DLL       =
