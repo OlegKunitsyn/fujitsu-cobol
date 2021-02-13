@@ -2,6 +2,7 @@
 # Source: https://archive.org/details/FujitsuCobol3 
 # Build: docker build --tag olegkunitsyn/fujitsu-cobol:3.0 .
 # Publish: docker push olegkunitsyn/fujitsu-cobol:3.0
-FROM ledokun/wine-x11-novnc-docker
+FROM solarkennedy/wine-x11-novnc-docker
 COPY ./FSC /root/prefix32/drive_c/FSC
 WORKDIR /root/prefix32/drive_c/src
+
